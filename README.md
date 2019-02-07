@@ -25,3 +25,4 @@ Workplace for GAN experiments
 
 ## Glossary
 - p.d.f: probability distribution function p(x|y)
+- Bayes rule: p(x|y) = p(y|x)*p(x) / p(y)
