@@ -1,5 +1,7 @@
 # Hand-written digits generator
-Inspired from [Diego Gomez Mosquera's tutorial](https://medium.com/ai-society/gans-from-scratch-1-a-deep-introduction-with-code-in-pytorch-and-tensorflow-cb03cdcdba0f), huge thanks to him, and featuring [VanillaGAN](https://arxiv.org/abs/1406.2661).
+Inspired from [Diego Gomez Mosquera's tutorial](https://medium.com/ai-society/gans-from-scratch-1-a-deep-introduction-with-code-in-pytorch-and-tensorflow-cb03cdcdba0f), huge thanks to him, and featuring [VanillaGAN](https://arxiv.org/abs/1406.2661).  
+For visualization:
+![numbers as generated over epoch](images/numbers.gif)
 
 ## Good data habits for GANs, based on [this github](https://github.com/soumith/ganhacks)
 Note: It would worth to double check all of them, to understand them better
