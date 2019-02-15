@@ -1,7 +1,18 @@
 # Useful documentation and annotations
 
 ## [Generative Adversalial Nets](https://arxiv.org/pdf/1406.2661.pdf)
-![algo](images/GAN_algorithm.png)
+![algo](images/GAN_algorithm.png)  
+A few of the problems GANs often encounter:
+- Non-convergence: weights of the model oscillate forever, no convergence to the Nash equilibrium
+- Mode collapse: G failed to be diverse, and limits itself to a small number of samples
+- Diminished gradient: when D is to strong compared to G -> So G learns nothing, which leads to overfitting
+- They are highly dependant / sensitive to the hyperparameters
+
+## [DCGANS - Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks](https://arxiv.org/pdf/1511.06434.pdf)
+Improvement to CNN architecture, three core differences:
+- 1) All convolutional net (Springenberg et al., 2014) which replaces deterministic spatial pooling functions (such as maxpooling) with strided convolutions, allowing the network to learnits own spatial downsampling.
+- 2) Eliminates all fully connected layers on top of convolutional features. Replaces by global average pooling, which increases the model stability but decreases convergence speed.
+- 3) Batch Normalization (Ioffe & Szegedy, 2015) to stabilize learning by normalizing the input to each unit to have zero mean and unit variance.
 
 ## [CSN229 from Andrew Ng](http://cs229.stanford.edu/notes/cs229-notes2.pdf)
 READING IN PROGRESS
