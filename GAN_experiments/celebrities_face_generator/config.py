@@ -15,7 +15,7 @@ cfg = __C
 # General options                            #
 ##############################################
 # Dataset to use (sample has 99 images)
-__C.DATASET_NAME = 'celeba_sample' # 'celeba'
+__C.DATASET_NAME = 'celeba' # 'celeba_sample'
 # Main directory
 __C.ROOT_DIR = os.path.dirname(__file__)
 # The directory where to find the datasets
@@ -27,9 +27,9 @@ __C.DATASET_DIR = os.path.join(__C.ROOT_DIR, 'datasets', __C.DATASET_NAME)
 # Number of workers for dataloader
 __C.WORKERS = 2
 # Batch size during training
-__C.BATCH_SIZE = 32
+__C.BATCH_SIZE = 128
 # Number of training epochs
-__C.NB_EPOCHS = 100
+__C.NB_EPOCHS = 5
 # Learning rate
 __C.LEARNING_RATE = 0.0002
 # Beta1 hyperparam for Adam optimizers
